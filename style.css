@@ -133,3 +133,73 @@ body {
   cursor: pointer;
   margin-top: 1rem;
 }
+.popular {
+  padding: 1.5rem;
+  text-align: center;
+}
+.popular h4 {
+  font-family: "Satisfy", cursive;
+  font-size: 1.25rem;
+  color: red;
+  margin-bottom: 0.5rem;
+}
+.popular h2 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 0.5rem;
+}
+.menüler {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+.menüler a {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-weight: 400;
+  gap: 0.5rem;
+  padding:0.5rem 1rem;
+  background-color: white;
+  border-radius: 30px;
+}
+.menüler a.active {
+  background-color: #292929;
+  color: white;
+}
+.menu-list {
+  display:flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.menu-card {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 15px;
+  width: 250px;
+  text-align: center;
+  
+}
+
+.menu-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.menu-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.menu-card .details {
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.9rem;
+  color: #555;
+}
