@@ -282,6 +282,9 @@ body {
   .menüler a {
     font-size: 0.8rem;
   }
-  
+  .footer-container {
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+  }
 }
 
