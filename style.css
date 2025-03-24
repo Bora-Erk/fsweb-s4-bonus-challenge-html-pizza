@@ -1,332 +1,46 @@
-/* Genel Ayarlar */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  
 }
 
 body {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   background-color: #FAF7F2;
-  color: #333;
-  line-height: 1.6;
 }
 
-h1, h2, h3, h4 {
-  font-family: "Barlow", sans-serif;
+.site-header {
+  background-image: url(public/assets/iteration-1/home-banner.png);
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 2rem;
 }
-
-h1.ana-baslık {
+.ana-baslık {
+  font-family: 'Barlow',sans-serif;
+  font-weight: 100;
   font-size: 2.5rem;
   text-align: center;
-  margin-top: 1rem;
-  color: #fff;
+  color:white;
 }
-
-p {
+.site-header p {
+  font-family: 'Satisfy';
+  color: #f5c211;
+  padding-top: 2rem;
   font-size: 1rem;
 }
-
-/* Header */
-.site-header {
-  position: relative;
-  width: 100%;
-  height: auto;
-  background-color: #d62f2f;
-  overflow: hidden;
-}
-
-.site-header .home-banner {
-  width: 100%;
-  display: block;
-  z-index: 1;
-  position: relative;
-}
-
-/* Logo */
-.site-header img[src*="logo.svg"] {
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 2;
-  height: 40px;
-}
-
-/* “fırsatı kaçırma” yazısı */
-.site-header p {
-  position: absolute;
-  top: 75px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-family: 'Satisfy', cursive;
-  font-size: 1.2rem;
-  color: #f5c211;
-  z-index: 2;
-}
-
-/* Ana başlık */
-.ana-baslık {
-  position: absolute;
-  top: 85px;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  color: white;
-  font-family: "Roboto Condensed", sans-serif;
-  font-weight: lighter; 
-  font-size: 2.2rem;
-  line-height: 1.4;
-  z-index: 2;
-}
-
-/* Acıktım Butonu */
 .site-header .btn {
-  position: absolute;
-  top: 210px;
-  left: 50%;
-  transform: translateX(-50%);
   background-color: #f5c211;
   color: black;
   border: none;
   font-weight: lighter; 
   padding: 0.75rem 2rem;
   border-radius: 30px;
-  font-weight: 600;
-  cursor: pointer;
-  z-index: 2;
-  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-family: 'Barlow';
+  margin-top: 0.50rem;
 }
-
-
-
-/* Kategori Menü */
-.categories ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  background-color: white;
-  padding: 1rem;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.categories li {
-  display: flex;
-  font-weight: 400 !important;
-  align-items: center;
-  gap: 0.5rem;
-  font-weight: bold;
-  color: #333;
-  cursor: pointer;
-}
-
-/* Öne Çıkanlar */
-.featured {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 2rem;
-  gap: 1.5rem;
-}
-
-.featured-card-red {
-  background-image: url('public/assets/iteration-2/cta/kart-1.png');
-  color: white;
-  padding: 1.5rem;
-  flex: 1;
-  border-radius: 20px;
-  position: relative;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-.featured-card-red h2 {
-  font-family: 'Quattrocento', serif;
-  font-size: 3rem;;
-}
-
-
-.featured-group {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  flex: 1;
-}
-
-.fatured-card-black,
-.featured-card-light {
-  padding: 1.5rem;
-  border-radius: 20px;
-  color: white;
-  position: relative;
-}
-
-.fatured-card-black {
-  background-image: url('public/assets/iteration-2/cta/kart-2.png');
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-
-.featured-card-light {
-  background-image: url('public/assets/iteration-2/cta/kart-3.png');
-  color: #333;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-.featured-card-light h3.red {
-  color: red;
-}
-
-.btn-secondary {
-  margin-top: 1rem;
-  font-weight: lighter !important;
-  background-color: #fff;
-  color: #d62f2f;
-  border: none;
-  padding: 0.5rem 1.5rem;
-  font-weight: bold;
-  border-radius: 20px;
-  cursor: pointer;
-}
-
-/* Popüler Menü */
-.popular {
-  padding: 2rem;
-  text-align: center;
-}
-
-.popular h4 {
-  font-family: "Satisfy", cursive;
-  font-size: 1.25rem;
-  color: #d62f2f;
-  margin-bottom: 0.5rem;
-}
-
-.popular h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
-}
-
-.menüler {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  list-style: none;
-  margin-bottom: 2rem;
-  flex-wrap: wrap;
-}
-
-.menüler li {
-  display: flex;
-  align-items: center;
-  font-weight: 400 !important;
-  gap: 0.5rem;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.menüler li.active {
-  background-color: #292929;
-  color: white;
-}
-
-.menu-list {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-
-.menu-card {
-  background-color: #f9f9f9;
-  padding: 1rem;
-  border-radius: 15px;
-  width: 250px;
-  text-align: center;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-}
-
-.menu-card img {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 1rem;
-}
-
-.menu-card h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-}
-
-.menu-card .details {
-  display: flex;
-  justify-content: space-around;
-  font-size: 0.9rem;
-  color: #555;
-}
-
-/* Footer */
-.footer {
-  background-color: #292929;
-  color: white;
-  padding: 3rem 1rem;
-}
-
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  gap: 2rem;
-  padding: 3rem 4rem;
-}
-.footer-logo {
-  order: -1;
-}
-
-
-.footer-contact ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-contact li,
-.footer-menu a {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 0.5rem;
-  color: white;
-  text-decoration: none;
-}
-
-.footer-menu h4,
-.footer-instagram h4 {
-  margin-bottom: 1rem;
-  font-weight: 600;
-}
-
-.footer-gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.5rem;
-}
-
-.footer-gallery img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-.copyrigth {
-  text-align: center;
-  font-size: 0.8rem;
-  margin-top: 2rem;
-  color: #aaa;
-}
-
