@@ -44,3 +44,16 @@ body {
   font-family: 'Barlow';
   margin-top: 0.50rem;
 }
+.categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  font-weight: 400;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.categories a {
+  display: flex;
+  align-items: center;
+}
