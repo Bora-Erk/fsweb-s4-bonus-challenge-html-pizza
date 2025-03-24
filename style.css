@@ -203,3 +203,40 @@ body {
   font-size: 0.9rem;
   color: #555;
 }
+.footer {
+  background-color: #292929;
+  color: white;
+  padding: 3rem 1rem;
+}
+.footer .footer-logo {
+  margin-left: 4rem;
+}
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 2rem;
+  padding: 3rem 4rem;
+}
+.footer-container .footer-contact ul {
+  list-style: none;
+}
+.footer-menu a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.footer-gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.copyrigth  {
+  border-top: 1px solid #444;
+  padding-top: 2rem;
+  margin-top: 2rem;
+}
